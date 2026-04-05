@@ -1,0 +1,21 @@
+{
+  "name": "animekai-vercel-ts-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vercel-ready TypeScript port of the AnimeKai scraper API.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

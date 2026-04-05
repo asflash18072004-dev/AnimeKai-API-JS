@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/api/router" },
+    { "source": "/health", "destination": "/api/router" },
+    { "source": "/filters", "destination": "/api/router" },
+    { "source": "/catalog/:path*", "destination": "/api/router" },
+    { "source": "/anime/:path*", "destination": "/api/router" },
+    { "source": "/videos", "destination": "/api/router" },
+    { "source": "/docs", "destination": "/api/router" },
+    { "source": "/redoc", "destination": "/api/router" },
+    { "source": "/openapi.json", "destination": "/api/router" }
+  ]
+}
